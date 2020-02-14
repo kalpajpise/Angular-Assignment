@@ -1,0 +1,33 @@
+<mat-toolbar>
+  <span>Hospital Management System</span>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <ul>
+      <li routerLink="/categories" routerLinkActive="active current">
+        <i class="fa fa-list-alt" aria-hidden="true"></i>
+        Categories
+      </li>
+      <li routerLink="/employee" routerLinkActive="active current">
+        <!-- <mat-form-field apperance ="none">
+          <mat-label>Employee Type</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let employee of emp" [value]="employee.id">
+              {{ employee.emp_opt }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field> -->
+        Add Employee
+      </li>
+      <li>
+        Patient
+      </li>
+
+      <li>Rooms</li>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class=" container-inside"><router-outlet></router-outlet></div>
+  </mat-drawer-content>
+</mat-drawer-container>

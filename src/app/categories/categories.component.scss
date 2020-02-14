@@ -1,0 +1,47 @@
+@media all and (min-width: 768px) {
+  tr {
+    td {
+      vertical-align: middle !important;
+    }
+    span {
+      &:not([class]) {
+        padding: 1rem 1rem;
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  // text-align: center;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+#label-cat {
+  text-align: left;
+  margin-left: 4px;
+  font-size: 1.1rem;
+}
+.btn {
+  margin-left: 3px;
+}
+
+div.table-Cat {
+  margin: 40px 10px;
+}
+
+span.deleteCat {
+  color: white;
+  cursor: pointer;
+  background-color: rgba(199, 54, 54, 0.795);
+  margin-left: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+span.editCat {
+  color: rgba(41, 41, 180, 0.712);
+  margin-left: 15px;
+}

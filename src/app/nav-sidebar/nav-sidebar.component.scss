@@ -1,0 +1,84 @@
+mat-toolbar {
+  background-color: #343a40;
+  color: white;
+  font-weight: 20px;
+  font-size: 1.2rem;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  :hover {
+    color: yellowgreen;
+  }
+}
+
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-drawer {
+  padding: 10px;
+}
+mat-drawer-content {
+  padding: 20px;
+}
+mat-drawer {
+  left: 0px;
+  padding-top: 25px;
+  background-color: #343a40;
+  width: 180px;
+  box-shadow: 5px 10px 5px #aaaaaa;
+  color: white;
+
+  overflow: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+  text-decoration: none;
+  i {
+    margin-right: 2px;
+  }
+
+  li {
+    padding: 5px;
+    padding-left: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 20px;
+    width: 140px;
+  }
+  :hover {
+    color: palegreen;
+  }
+  .active {
+    background-color: #3f4a55;
+    color: white;
+    // box-shadow: 2px 2px 2px black;
+    text-decoration: none;
+    border-radius: 7px;
+  }
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  a.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+}
